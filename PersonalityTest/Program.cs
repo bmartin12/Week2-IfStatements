@@ -6,14 +6,9 @@ namespace PersonalityTest
     {
         static void Main(string[] args)
         {
-            //programm küsib kasutaja käest sisestada tema lemmikvärvi
-            //kui kasutaja sisestab "punane", konsool kuvab "oled blood haha lol"
-            //kui kasutaja sisetab "sinine", konsool kuvab "oled crip haha lol"
-            //kui kasutaja sisetab "roheline", konsool kuvab "oled looduse inimene haha lol"
-            //kui kasutaja sisetab "lilla", konsool kuvab "oled balla haha lol"
-
+           
             Console.WriteLine("whats yer fav color");
-            string UserColor = Console.ReadLine();
+            string UserColor = Console.ReadLine().ToLower();
 
             if(UserColor == "red")
             {
